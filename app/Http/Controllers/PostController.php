@@ -15,6 +15,7 @@ class PostController extends Controller
  */
 	public function index(Post $post)
 	{
-	return 'こんにちは';	
+	return view('posts/index')->with(['posts'=>$post->getByLimit()]);	
 }
 }
+?>
