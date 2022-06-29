@@ -12,15 +12,11 @@
     </head>
     <body>
         <h1>Blog name</h1>
-
         <div class ='post'>
-            <h2 class ='title'>{{ $post->title}}</h2>
-            <p class 'body'>{{$post->body}}</p>
-            <p class 'updated'>{{$post->updated}}</p>
+            <h2 class ='title'>{{ $post->title }}</h2>
+            <p class 'body'>{{ $post->body }}</p>
+            <p class 'updated_at'>{{ $post->updated_at }}</p>
         </div>
         <div class ='back'>[<a href='/'>back</a>]</div>
-
-            </div>
-        </div>
     </body>
 </html>
